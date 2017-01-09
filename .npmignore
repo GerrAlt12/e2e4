@@ -7,14 +7,12 @@ node_modules
 coverage
 tests
 esm/tests
-**/*[!.][!d].ts
 
 .cleandir.sh
 .travis.yml
 karma.conf.js
 karma.conf.debug.js
 tsconfig.esm.json
-tsconfig.json
 tslint.json
 typedoc.json
 wallaby.js
