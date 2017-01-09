@@ -81,7 +81,7 @@ export class FiltersService {
             return value.toRequest();
         }
         if (Array.isArray(value)) {
-            const temp = [];
+            const temp = Array<any>;
             for (let i = 0; i < value.length; i++) {
                 temp[i] = FiltersService.buildFilterValue(target, value[i], null);
             }

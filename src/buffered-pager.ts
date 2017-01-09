@@ -76,7 +76,7 @@ export class BufferedPager implements Pager {
         defaultValue(this: BufferedPager): number { return this.defaultRowCount; },
         parameterName: 'take',
         parseFormatter(this: BufferedPager, rawValue: any, allValues: any): number {
-            let result;
+            let result: number;
             if (allValues && !isNaN(allValues.skip) && !isNaN(allValues.take)) {
                 result = (allValues.skip || 0) + (allValues.take || 0);
             }
